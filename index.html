@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131119">
+  <meta name="description" content="Friendly partner conversations. Pick a question, share your perspective, and put your team in the spotlight.">
+  <title>Trick or Treat | Partner spotlight</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="questions.js"></script>
+  <script defer src="partners.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#play" aria-label="Partner spotlight home"><span class="brand-mark" aria-hidden="true">?</span> PARTNER SPOTLIGHT</a>
+    <span class="edition">UNIVERSE EDITION</span>
+  </header>
+  <main>
+    <nav aria-label="Main navigation">
+      <a href="#play" aria-current="page">Play</a>
+      <a href="#partners">Partner picks</a>
+      <a href="#library">Question bank</a>
+    </nav>
+
+    <section id="play" aria-labelledby="play-title">
+      <div id="welcome">
+        <p class="eyebrow">GOOD PEOPLE. GOOD QUESTIONS.</p>
+        <h1 id="play-title">Trick<br>or <span>Treat?</span></h1>
+        <p class="intro">A little curiosity. A good conversation.<br>You choose what makes it on camera.</p>
+        <div class="setup">
+          <label for="topic">Question topic</label>
+          <select id="topic" aria-describedby="active-partner"></select>
+          <p id="active-partner" role="status">Loading question topics...</p>
+        </div>
+        <div class="doors">
+          <button class="door trick" id="trick-button"><span class="door-label">TRICK</span><strong>Clear up a myth.</strong><span>A friendly hot take, not a gotcha.</span><span class="arrow" aria-hidden="true">&rarr;</span></button>
+          <button class="door treat" id="treat-button"><span class="door-label">TREAT</span><strong>Share something good.</strong><span>A useful tip or a moment of pride.</span><span class="arrow" aria-hidden="true">&rarr;</span></button>
+        </div>
+        <p class="small-note">Two questions. Pick either. Swapping is always fair game.</p>
+      </div>
+      <div id="round" hidden>
+        <button class="text-button" id="back-home">&larr; Trick or Treat</button>
+        <p class="eyebrow" id="round-tone"></p>
+        <h2 tabindex="-1" id="round-title">Which one's yours?</h2>
+        <p class="intro" id="round-context"></p>
+        <div id="question-pair" class="question-pair"></div>
+        <div class="actions">
+          <button class="primary" id="swap">Swap questions</button>
+          <button class="secondary" id="next-person">Next person</button>
+        </div>
+        <p id="round-status" class="small-note" role="status"></p>
+        <p class="small-note">Keep customer names and private project details off camera. Ask permission before recording or posting.</p>
+      </div>
+      <div id="spotlight" hidden>
+        <button class="text-button" id="back-pair">&larr; See both questions</button>
+        <p class="eyebrow" id="spotlight-label"></p>
+        <h2 tabindex="-1" id="spotlight-question"></h2>
+        <p class="intro">Your perspective. Your words.</p>
+        <button class="primary" id="spotlight-next">Next person</button>
+      </div>
+    </section>
+
+    <section id="partners" aria-labelledby="partners-title" hidden>
+      <p class="eyebrow">HOST DESK</p>
+      <h2 id="partners-title">Their language.<br><span>Their spotlight.</span></h2>
+      <p class="intro">Choose a partner for questions inspired by their public positioning. Source notes are for your prep, not a script they have to follow.</p>
+      <label for="partner-select">Partner</label>
+      <select id="partner-select"></select>
+      <div id="partner-detail"></div>
+      <div class="actions">
+        <button class="primary" id="play-partner">Play with this partner</button>
+        <button class="secondary" id="play-general">Use general questions</button>
+      </div>
+      <h3>Partner question preview</h3>
+      <div id="partner-questions" class="library-list"></div>
+    </section>
+
+    <section id="library" aria-labelledby="library-title" hidden>
+      <p class="eyebrow">A QUESTION FOR EVERY CONVERSATION</p>
+      <h2 id="library-title">Keep it <span>curious.</span></h2>
+      <p class="intro">Browse the whole bank, including partner-specific prompts.</p>
+      <div class="filters">
+        <div><label for="search">Find a question</label><input id="search" type="search" placeholder="Agents, cost, migration..."></div>
+        <div><label for="audience-filter">Perspective</label><select id="audience-filter"><option value="">Both perspectives</option value="business">Business / sales</option><option value="technical">Technical / delivery</option></select></div>
+        <div><label for="tone-filter">Mood</label><select id="tone-filter"><option value="">Trick + Treat</option><option value="trick">Trick</option><option value="treat">Treat</option></select></div>
+      </div>
+      <p id="library-count" role="status" class="small-note"></p>
+      <div id="library-list" class="library-list"></div>
+    </section>
+  </main>
+  <footer>Partner-first. Camera-friendly. No gotchas.<br>Independent conversation tool, not an official GitHub or partner publication. No recording, analytics, or answer collection.</footer>
+</body>
+</html>
