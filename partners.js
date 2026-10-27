@@ -254,5 +254,180 @@ globalThis.SPOTLIGHT_PARTNERS = [
       { audience: "technical", tone: "treat", topic: "GitHub-native migration with Warp", text: "Migration HQ creates an issue per source repository. What useful planning decision can an engineer make from that?", sourceIndex: 1 },
       { audience: "technical", tone: "treat", topic: "GitHub-native migration with Warp", text: "Your docs name the App, Control Plane, Runner Agent, and Vault. Which piece would you explain first to a curious engineer?", sourceIndex: 1 }
     ]
+  },
+  {
+    id: "accenture-avanade",
+    name: "Accenture / Avanade",
+    themes: ["Measured Copilot adoption", "Developer experience", "People and change", "Microsoft ecosystem"],
+    positioning: "Accenture's GitHub Copilot research provides a concrete story about adoption, developer experience, and measuring engineering outcomes. Avanade's public AI positioning emphasizes helping people do work they love with Microsoft Copilot.",
+    deliveryModel: "The Accenture study combines a randomized controlled trial, adoption telemetry, and developer surveys. Avanade separately describes its Microsoft relationship and people-oriented Copilot positioning; the study is not presented as a joint commercial delivery methodology.",
+    architecture: "The GitHub study looks at IDE adoption, suggestions, pull requests, builds, and developer experience. These are measurement surfaces, not a reference architecture. Avanade's broader Microsoft Copilot page does not establish a GitHub-specific deployment topology.",
+    interviewAngle: "Invite a friendly conversation about what meaningful AI adoption looks like beyond buying licenses or counting suggestions. Let the guest connect evidence, developer happiness, and the changes that make tools useful in everyday work.",
+    verificationNote: "GitHub's Accenture study and Avanade's public Copilot and partnership pages were read. Study results are context-specific, not guaranteed ROI. Avanade's Microsoft Copilot language must not be confused with a verified GitHub-specific offering.",
+    sources: [
+      { title: "GitHub research with Accenture", url: "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/", note: "Describes an enterprise trial, adoption analysis, developer surveys, pull requests, and builds. Prompts avoid promising the published percentage improvements for other teams." },
+      { title: "Avanade: Copilot by your side", url: "https://www.avanade.com/en-us/services/artificial-intelligence/ai-copilot-hub", note: "Broad Microsoft Copilot positioning about productivity, creativity, security, and helping people do work they love. Not evidence of a specific GitHub architecture." },
+      { title: "Avanade: technology partnerships", url: "https://www.avanade.com/en-us/services/tech-partnerships", note: "Identifies Avanade as an Accenture and Microsoft joint venture. Used for relationship context, not to attribute the Accenture study to Avanade." }
+    ],
+    questions: [
+      { audience: "business", tone: "trick", topic: "Measuring adoption and developer experience", text: "The Accenture Copilot study measured more than usage. What's one myth about proving AI value with a single number?", sourceIndex: 0 },
+      { audience: "business", tone: "trick", topic: "Measuring adoption and developer experience", text: "Avanade talks about helping people do work they love. What gets missed when AI adoption is treated as just a license purchase?", sourceIndex: 1 },
+      { audience: "technical", tone: "trick", topic: "Measuring adoption and developer experience", text: "The Accenture study combined telemetry and surveys. What's one thing a suggestion-acceptance rate cannot tell you on its own?", sourceIndex: 0 },
+      { audience: "technical", tone: "trick", topic: "Measuring adoption and developer experience", text: "Your Copilot research looked at builds as well as pull requests. What gets overlooked when teams measure only how much code is produced?", sourceIndex: 0 },
+      { audience: "business", tone: "treat", topic: "Measuring adoption and developer experience", text: "Your Copilot research included developer satisfaction. What's a human signal that tells you an AI rollout is helping?", sourceIndex: 0 },
+      { audience: "business", tone: "treat", topic: "Measuring adoption and developer experience", text: "Avanade's message is Copilot by your side. What's a good first conversation with a team that's curious but not sure where to start?", sourceIndex: 1 },
+      { audience: "technical", tone: "treat", topic: "Measuring adoption and developer experience", text: "The Accenture study followed real developer workflows. What small workflow would you measure first in a Copilot pilot?", sourceIndex: 0 },
+      { audience: "technical", tone: "treat", topic: "Measuring adoption and developer experience", text: "Your research pairs developer feedback with engineering data. What's one question you'd ask developers alongside the dashboard?", sourceIndex: 0 }
+    ]
+  },
+  {
+    id: "ibm-consulting",
+    name: "IBM Consulting / Neudesic / Nordcloud / BoxBoat",
+    themes: ["Enterprise modernization", "Cloud-native engineering", "Platform engineering", "FinOps and governance"],
+    positioning: "This grouped interview choice brings together complementary public stories: Neudesic on Azure AI and modernization, Nordcloud on cloud-native engineering and FinOps, and BoxBoat on containers, Kubernetes, and DevSecOps.",
+    deliveryModel: "Neudesic describes end-to-end Azure, data, application, and AI delivery. Nordcloud connects strategy and migration with platform engineering and managed operations. BoxBoat describes platform adoption strategies, application containerization, training, and enablement. These are separate capabilities, not one shared branded method.",
+    architecture: "BoxBoat's public page centers on containers and Kubernetes. Nordcloud describes secure multicloud foundations, automation, self-service, and Day 2 operations. Neudesic emphasizes Azure data, AI, and governance. No group-wide proprietary GitHub architecture was verified.",
+    interviewAngle: "Ask which part of the modernization journey the guest knows best, then explore the bridge from platforms and skills to responsible AI adoption. FinOps, human ownership, and production readiness are approachable topics across sales and delivery.",
+    verificationNote: "IBM's Neudesic, Nordcloud, and BoxBoat pages were read. They support broader modernization prompts, not a verified GitHub-specific methodology. A capability attributed to one member should not be assumed to apply to every company in this group.",
+    sources: [
+      { title: "IBM Neudesic: enterprise AI on Azure", url: "https://www.ibm.com/consulting/neudesic", note: "Describes Azure, data, app modernization, agentic AI, governance, and managed services. Microsoft Copilot references are not treated as GitHub Copilot evidence." },
+      { title: "IBM Nordcloud: cloud-native engineering", url: "https://www.ibm.com/consulting/nordcloud", note: "Describes platform engineering, developer self-service, FinOps, cloud foundations, AI readiness, and Day 2 cloud operations." },
+      { title: "IBM BoxBoat: containers and DevSecOps", url: "https://www.ibm.com/consulting/boxboat", note: "Describes Kubernetes and enterprise container platform adoption, application containerization, DevSecOps, and training. Does not specify a GitHub delivery architecture." }
+    ],
+    questions: [
+      { audience: "business", tone: "trick", topic: "Modernization from platform to production", text: "Neudesic talks about operationalizing AI at scale. What's one misconception about moving from an AI demo to business value?", sourceIndex: 0 },
+      { audience: "business", tone: "trick", topic: "Modernization from platform to production", text: "Nordcloud includes FinOps in modernization. What's one myth about cost optimization that deserves a friendlier explanation?", sourceIndex: 1 },
+      { audience: "technical", tone: "trick", topic: "Modernization from platform to production", text: "BoxBoat pairs platform adoption with training. What gets missed when a Kubernetes rollout is treated as only an installation?", sourceIndex: 2 },
+      { audience: "technical", tone: "trick", topic: "Modernization from platform to production", text: "Nordcloud talks about Day 2 operations. What's one thing teams should plan before calling a migration finished?", sourceIndex: 1 },
+      { audience: "business", tone: "treat", topic: "Modernization from platform to production", text: "Neudesic connects AI with data and application modernization. What helps a customer choose a useful first use case?", sourceIndex: 0 },
+      { audience: "business", tone: "treat", topic: "Modernization from platform to production", text: "Nordcloud links cost visibility with accountability. What makes a good FinOps conversation between engineering and the business?", sourceIndex: 1 },
+      { audience: "technical", tone: "treat", topic: "Modernization from platform to production", text: "BoxBoat emphasizes enablement alongside DevSecOps. What's a hands-on exercise that helps a team own its new platform?", sourceIndex: 2 },
+      { audience: "technical", tone: "treat", topic: "Modernization from platform to production", text: "Nordcloud describes self-service platform capabilities. What would you automate first to make a developer's day easier?", sourceIndex: 1 }
+    ]
+  },
+  {
+    id: "incycle",
+    name: "InCycle",
+    themes: ["Elevate", "Migration and modernization", "Continuous governance", "Agentic DevOps and MCP"],
+    positioning: "InCycle connects GitHub migration with repository modernization and governance. Its named Elevate platform supports discovery, planning, migration pilots, pipeline transformation, and ongoing standards.",
+    deliveryModel: "Public migration materials describe environment and dependency analysis, a roadmap, pilot migrations, batch scheduling, validation, and enablement. Agentic DevOps services add hands-on workshops, workflow coaching, measurement, and modernization with Copilot.",
+    architecture: "Elevate materials describe repository and pipeline analysis, transformation rules, bulk standards updates, policy assignment, and a compliance dashboard. GitHub services also cover Actions runners, scale sets, and governance. These are vendor descriptions, not an independent platform evaluation.",
+    interviewAngle: "Use Elevate to ask what becomes possible after repositories move, rather than turning the interview into a migration postmortem. Governance drift, repeatable patterns, and the human decisions around agentic workflows make useful technical follow-ups.",
+    verificationNote: "GitHub services, Elevate migration and modernization, and Agentic DevOps pages were read. Speed and scale claims are not repeated as guarantees. Dated product descriptions on the general services page are not used as current Copilot architecture.",
+    sources: [
+      { title: "InCycle: GitHub partner services", url: "https://www.incyclesoftware.com/github-partner-services", note: "Covers GitHub adoption, migration prerequisites and cutover, pipelines, governance, Actions runners, training, and coaching." },
+      { title: "Elevate: migration and modernization", url: "https://www.incyclesoftware.com/github-migration-and-repo-modernization", note: "Describes discovery, planning, pilots, transformation rules, governance dashboards, validation, and modernization. Vendor performance claims are not independently verified." },
+      { title: "InCycle: GitHub Agentic DevOps", url: "https://www.incyclesoftware.com/github-agentic-devops", note: "Describes Copilot enablement, agentic workflows and MCP, legacy modernization, hands-on workshops, coaching, and measurement." }
+    ],
+    questions: [
+      { audience: "business", tone: "trick", topic: "Elevate migration and agentic modernization", text: "Elevate connects migration with modernization. What's one myth about a GitHub migration being just a repository move?", sourceIndex: 1 },
+      { audience: "business", tone: "trick", topic: "Elevate migration and agentic modernization", text: "Your Agentic DevOps work includes coaching and measurement. What gets overlooked when a team starts with tools before outcomes?", sourceIndex: 2 },
+      { audience: "technical", tone: "trick", topic: "Elevate migration and agentic modernization", text: "Elevate includes governance after migration. What's one misconception about standards staying consistent once the cutover is done?", sourceIndex: 1 },
+      { audience: "technical", tone: "trick", topic: "Elevate migration and agentic modernization", text: "Your agentic offering covers MCP. What's one thing connecting an agent to a tool does not solve by itself?", sourceIndex: 2 },
+      { audience: "business", tone: "treat", topic: "Elevate migration and agentic modernization", text: "Your migration approach starts with a roadmap. What early conversation helps a customer feel confident about the journey?", sourceIndex: 1 },
+      { audience: "business", tone: "treat", topic: "Elevate migration and agentic modernization", text: "InCycle pairs Copilot adoption with hands-on coaching. What helps an early win become a lasting team habit?", sourceIndex: 2 },
+      { audience: "technical", tone: "treat", topic: "Elevate migration and agentic modernization", text: "Elevate uses migration pilots and transformation rules. What would you learn from the first pilot before scaling?", sourceIndex: 1 },
+      { audience: "technical", tone: "treat", topic: "Elevate migration and agentic modernization", text: "Your GitHub services include Actions runner design. What's one useful question to ask before choosing how to run pipelines?", sourceIndex: 0 }
+    ]
+  },
+  {
+    id: "lantern",
+    name: "Lantern",
+    themes: ["From licenses to leaders", "Embedded Copilot mastery", "Developer champions", "Agent-ready foundations"],
+    positioning: "Lantern's GitHub pages connect migration foundations, embedded Copilot adoption, and agentic development. Its Copilot language is 'From licenses to leaders,' with an emphasis on internal advocates and learning on real projects.",
+    deliveryModel: "The Copilot Mastery page describes six weeks embedded with teams, champion development, communities of practice, and tracking usage, productivity, and satisfaction. Its migration page connects change management with repository, workflow, and security design.",
+    architecture: "The migration page discusses repository structure, CI/CD, secret management, scanning, and Azure integration as agent-ready foundations. The agentic page describes ecosystem integration and governance; it does not publish a detailed reference topology or independently validated autonomy benchmark.",
+    interviewAngle: "Ask how embedded work leaves a team stronger after the partner leaves. The contrast between buying licenses and building champions creates a natural business question, while agent context and governance give delivery guests a technical choice.",
+    verificationNote: "Lantern's migration, Copilot Mastery, and Agentic DevOps pages were read. Claims about zero disruption, competitive advantage, and autonomous delivery are marketing descriptions, not guarantees or independently verified customer outcomes.",
+    sources: [
+      { title: "Lantern: GitHub Copilot Mastery", url: "https://lanternstudios.com/github/copilot-mastery/", note: "Describes six-week embedded work, real projects, developer champions, communities of practice, and adoption and satisfaction metrics." },
+      { title: "Lantern: GitHub migrations", url: "https://lanternstudios.com/github/migrations/", note: "Describes agent-ready repository and workflow design, secret management, security scanning, change management, and Azure integration." },
+      { title: "Lantern: Agentic DevOps", url: "https://lanternstudios.com/github/agentic-devops/", note: "Describes agent ecosystems, integration with existing tools, and governance. Autonomy and performance claims are not treated as proven guarantees." }
+    ],
+    questions: [
+      { audience: "business", tone: "trick", topic: "From licenses to leaders", text: "Your phrase is From licenses to leaders. What's one myth about buying Copilot and expecting adoption to happen on its own?", sourceIndex: 0 },
+      { audience: "business", tone: "trick", topic: "From licenses to leaders", text: "Lantern connects agentic development with business strategy. What gets missed when the conversation starts with autonomy instead of a useful outcome?", sourceIndex: 2 },
+      { audience: "technical", tone: "trick", topic: "From licenses to leaders", text: "Your migration page talks about agent-ready foundations. What's one thing that moving repositories alone doesn't prepare?", sourceIndex: 1 },
+      { audience: "technical", tone: "trick", topic: "From licenses to leaders", text: "Your agentic approach includes governance. What's one misconception about giving an agent access to the whole toolchain?", sourceIndex: 2 },
+      { audience: "business", tone: "treat", topic: "From licenses to leaders", text: "You embed with teams for six weeks. What helps a developer champion keep the momentum going after that?", sourceIndex: 0 },
+      { audience: "business", tone: "treat", topic: "From licenses to leaders", text: "Your Copilot Mastery page includes developer happiness. What's a small signal that tells you the team is enjoying the change?", sourceIndex: 0 },
+      { audience: "technical", tone: "treat", topic: "From licenses to leaders", text: "You teach Copilot on real projects. What's a good first task that helps a developer learn while delivering something useful?", sourceIndex: 0 },
+      { audience: "technical", tone: "treat", topic: "From licenses to leaders", text: "Your migration approach includes workflow and security foundations. What would you get right first for a team's first agentic workflow?", sourceIndex: 1 }
+    ]
+  },
+  {
+    id: "softwareone-crayon",
+    name: "SoftwareOne / Crayon",
+    themes: ["Making technology matter", "DevOps partnership", "Migration dry runs", "Cost visibility and ownership"],
+    positioning: "SoftwareOne's GitHub story combines DevOps capability assessment, transformation, migration, and long-term partnership. Its public brand update says Crayon is now SoftwareOne, emphasizing optimization, governance, and innovation.",
+    deliveryModel: "The DevOps page describes assessment and value-stream mapping, roadmaps, proof of concept, knowledge transfer, and managed infrastructure. A public HR SaaS migration story adds staged dry runs, code validation, strategic check-ins, and a self-service migration tool.",
+    architecture: "The case study describes XAML-to-YAML pipeline conversion, a two-hop Azure DevOps migration path, repository integrity checks, Jira integration, and GitHub consolidation. This is one customer's design, not a universal migration prescription or an offering attributed separately to Crayon.",
+    interviewAngle: "Ask about the handoff from partner-led delivery to customer ownership, or how consolidation can support both developer experience and cost clarity. Keep the public case study anonymous rather than asking the guest to identify the customer.",
+    verificationNote: "SoftwareOne's DevOps offering, HR SaaS case study, and Crayon brand update were read in the browser. The case study's cost and timeline results are not promises. Older certification and user counts are not repeated as current facts. No separate Crayon technical model was verified.",
+    sources: [
+      { title: "SoftwareOne: GitHub with DevOps Practices", url: "https://www.softwareone.com/en/now/github-with-devops-practices", note: "Describes capability assessment, value-stream mapping, transformation, migration, knowledge transfer, and DevOps partnership. Historic numerical badges are not used." },
+      { title: "HR SaaS provider: GitHub migration", url: "https://www.softwareone.com/en/case-studies/global/information-technology/hr-saas-github-migration", note: "Public anonymous customer story describes planning, staged dry runs, validation, pipeline changes, self-service migration, and consolidation. Published outcomes remain case-specific." },
+      { title: "Crayon is now SoftwareOne", url: "https://www.softwareone.com/en/now/crayon-is-now-softwareone", note: "SoftwareOne's public brand update connects cost optimization, licensing, cloud economics, governance, and modernization. Does not establish a separate GitHub architecture for Crayon." }
+    ],
+    questions: [
+      { audience: "business", tone: "trick", topic: "DevOps partnership and customer ownership", text: "Your message is Making technology matter. What's one misconception about optimizing technology spend being only about cutting licenses?", sourceIndex: 2 },
+      { audience: "business", tone: "trick", topic: "DevOps partnership and customer ownership", text: "Your GitHub offering starts with capability assessment. What gets missed when a DevOps transformation starts with a shopping list?", sourceIndex: 0 },
+      { audience: "technical", tone: "trick", topic: "DevOps partnership and customer ownership", text: "Your public HR SaaS story includes staged dry runs. What's one migration assumption that's worth checking before cutover?", sourceIndex: 1 },
+      { audience: "technical", tone: "trick", topic: "DevOps partnership and customer ownership", text: "Your migration story includes pipeline redesign. What gets overlooked when a team expects a repository move to modernize CI/CD automatically?", sourceIndex: 1 },
+      { audience: "business", tone: "treat", topic: "DevOps partnership and customer ownership", text: "Your DevOps Partnership includes knowledge transfer and ongoing support. What makes a customer feel the partner is truly on their team?", sourceIndex: 0 },
+      { audience: "business", tone: "treat", topic: "DevOps partnership and customer ownership", text: "Your public migration story connects consolidation with cost savings. What helps finance and engineering agree on what success looks like?", sourceIndex: 1 },
+      { audience: "technical", tone: "treat", topic: "DevOps partnership and customer ownership", text: "Your HR SaaS story left the customer a self-service migration tool. What makes a handoff genuinely useful to engineers?", sourceIndex: 1 },
+      { audience: "technical", tone: "treat", topic: "DevOps partnership and customer ownership", text: "Your DevOps approach includes value-stream mapping. What small bottleneck would you look for before adding more automation?", sourceIndex: 0 }
+    ]
+  },
+  {
+    id: "cdw",
+    name: "CDW",
+    themes: ["Accelerating AI Outcomes", "Validated Use Cases", "Listen, Advise, Transform", "To You, With You, For You"],
+    positioning: "CDW's UK public materials emphasize outcome-led technology adoption and Accelerating AI Outcomes. These provide interview language about use-case selection, governance, and the relationship between advice, delivery, and ongoing management.",
+    deliveryModel: "The UK services page names Listen, Advise, Transact, Transform, and Manage. It distinguishes staff augmentation ('To You'), project assistance ('With You'), and outcome-based delivery ('For You'). The AI Strategy page describes a six-week program with stakeholder workshops and a roadmap.",
+    architecture: "The AI page distinguishes off-the-shelf and custom AI, with data and infrastructure readiness, governance, integration, and human oversight. These are broad design considerations, not a verified CDW GitHub reference architecture or a claim that UK programs are offered unchanged in the Americas.",
+    interviewAngle: "Use CDW's public delivery language to ask how a customer chooses the right level of help. For technical guests, validated use cases, data readiness, and the choice between packaged and custom AI create accessible conversations without inventing GitHub-specific services.",
+    verificationNote: "CDW's US GitHub page could not be reviewed because requests were rate-limited. These prompts use reviewed official UK AI, services, and solutions pages instead. Regional availability and a GitHub-specific delivery model remain unverified; the downloadable AI guide was not read.",
+    sources: [
+      { title: "CDW UK: Accelerating AI Outcomes", url: "https://www.uk.cdw.com/it-solutions/ai/", note: "Describes AI Discover, a six-week AI Strategy program, governance, Validated Use Cases, off-the-shelf versus custom AI, and human oversight. Not a GitHub-specific service page." },
+      { title: "CDW UK: services and delivery models", url: "https://www.uk.cdw.com/it-services/", note: "Defines Listen, Advise, Transact, Transform, Manage, plus To You, With You, and For You delivery options. Regional service descriptions, not verified AMER program availability." },
+      { title: "CDW UK: integrated technology solutions", url: "https://www.uk.cdw.com/it-solutions/", note: "Describes outcome-led solutions and Assess, Design, Deploy, Manage, including roadmap reviews, architecture, pilots, training, and ongoing operations." }
+    ],
+    questions: [
+      { audience: "business", tone: "trick", topic: "Outcome-led AI and delivery choices", text: "CDW's UK site calls them Validated Use Cases. What's one myth about a flashy AI demo automatically being a useful business case?", sourceIndex: 0 },
+      { audience: "business", tone: "trick", topic: "Outcome-led AI and delivery choices", text: "Your UK services page says To You, With You, and For You. What's one misconception about every customer needing the same delivery model?", sourceIndex: 1 },
+      { audience: "technical", tone: "trick", topic: "Outcome-led AI and delivery choices", text: "Your AI guidance separates off-the-shelf from custom AI. What's one assumption to check before deciding to build something custom?", sourceIndex: 0 },
+      { audience: "technical", tone: "trick", topic: "Outcome-led AI and delivery choices", text: "CDW's AI approach emphasizes human oversight. What's one thing that adding an agent does not remove from an engineer's responsibilities?", sourceIndex: 0 },
+      { audience: "business", tone: "treat", topic: "Outcome-led AI and delivery choices", text: "Your UK AI Discover program brings business, IT, data, and legal together. What's a useful first question to get everyone aligned?", sourceIndex: 0 },
+      { audience: "business", tone: "treat", topic: "Outcome-led AI and delivery choices", text: "Your services approach starts with Listen. What do you love learning about a customer before recommending technology?", sourceIndex: 1 },
+      { audience: "technical", tone: "treat", topic: "Outcome-led AI and delivery choices", text: "Your UK solutions approach includes Assess, Design, Deploy, Manage. What's one small pilot that helps a team learn before scaling?", sourceIndex: 2 },
+      { audience: "technical", tone: "treat", topic: "Outcome-led AI and delivery choices", text: "Your AI Strategy includes data and infrastructure readiness. What's one readiness check you'd do before connecting a workflow to AI?", sourceIndex: 0 }
+    ]
+  },
+  {
+    id: "xebia",
+    name: "Xebia",
+    themes: ["Managed Developer Platform", "Well-Architected reviews", "Copilot enablement", "Curated workflows"],
+    positioning: "Xebia connects GitHub migration, Copilot enablement, Actions, security, and training with ongoing platform management. Its Managed Developer Platform adds a post-migration conversation about usage, costs, standards, and developer support.",
+    deliveryModel: "Public GitHub materials span assessments, rollout, optimization, and managed platforms. The Managed Developer Platform describes recurring reporting, repository scans, Well-Architected reviews, a skills library, and curated Actions alongside migration and training services.",
+    architecture: "The public model focuses on platform operations: repository visibility, usage and cost reporting, reusable automation, and architectural reviews. It does not publish one mandatory topology. Copilot enablement emphasizes developer workflows rather than a universal productivity multiplier.",
+    interviewAngle: "Ask what makes a developer platform useful after launch, or how the team balances consistency with developer choice. Managed operations and cost visibility give sales guests a business angle while curated Actions and review practices give delivery guests a technical one.",
+    verificationNote: "Xebia's GitHub partnership, Managed Developer Platform, and Copilot productivity pages were read. Linked webinars and gated white papers were not reviewed. Described capabilities are vendor statements, not independent evidence of customer ROI.",
+    sources: [
+      { title: "Xebia: GitHub partnership", url: "https://xebia.com/partners/github/", note: "Describes GitHub migration, Copilot, Actions, Advanced Security, training, assessments, rollout, and optimization." },
+      { title: "Xebia: Managed Developer Platform", url: "https://xebia.com/partners/github/managed-developer-platform-csp/", note: "Describes usage and cost reporting, repository scans, Well-Architected Framework reviews, a skills library, and curated Actions." },
+      { title: "Xebia: developer productivity with Copilot", url: "https://xebia.com/partners/github/developer-productivity-with-github-copilot/", note: "Emphasizes reducing routine work and improving developer workflows. Linked articles, webinars, and gated resources are not treated as read evidence." }
+    ],
+    questions: [
+      { audience: "business", tone: "trick", topic: "Managed platforms and developer value", text: "Your Managed Developer Platform continues after rollout. What's one myth about the job being finished when GitHub goes live?", sourceIndex: 1 },
+      { audience: "business", tone: "trick", topic: "Managed platforms and developer value", text: "Your Copilot page talks about getting back to the core of development. What gets missed when AI value is reduced to writing code faster?", sourceIndex: 2 },
+      { audience: "technical", tone: "trick", topic: "Managed platforms and developer value", text: "Your platform offering includes curated Actions. What's one misconception about standardization taking away developer choice?", sourceIndex: 1 },
+      { audience: "technical", tone: "trick", topic: "Managed platforms and developer value", text: "Xebia includes Well-Architected reviews in platform management. What gets missed when teams look only at whether pipelines are green?", sourceIndex: 1 },
+      { audience: "business", tone: "treat", topic: "Managed platforms and developer value", text: "Your Managed Developer Platform includes usage and cost reporting. What makes that report useful to both engineering and finance?", sourceIndex: 1 },
+      { audience: "business", tone: "treat", topic: "Managed platforms and developer value", text: "Xebia brings migration, enablement, and ongoing management together. Who should come find your team at Universe, and why?", sourceIndex: 0 },
+      { audience: "technical", tone: "treat", topic: "Managed platforms and developer value", text: "Your platform offering includes a skills library and curated Actions. What's one reusable pattern you'd give a new team first?", sourceIndex: 1 },
+      { audience: "technical", tone: "treat", topic: "Managed platforms and developer value", text: "Your Copilot message is about freeing time for interesting work. What's a routine task you'd help a developer tackle first?", sourceIndex: 2 }
+    ]
   }
 ];

@@ -166,7 +166,7 @@
     details.append(node("summary", "", "Host notes & public sources"));
     details.append(node("p", "small-note", "Prompts are our paraphrases, not partner quotes or endorsed statements. Only explicitly sourced approaches are named. Public sources reviewed October 27, 2026."));
     for (const [field, title] of [
-      ["positioning", "GitHub positioning"],
+      ["positioning", "Public positioning & GitHub context"],
       ["deliveryModel", "How they deliver"],
       ["architecture", "Architecture & operating model"],
       ["interviewAngle", "Your conversation angle"]
